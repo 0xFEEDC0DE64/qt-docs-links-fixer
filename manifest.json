@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+
+  "name": "Qt docs links fix",
+  "description": "This extension fixes old Qt docs links.",
+  "version": "1.0",
+  "permissions": [ "webRequest", "webRequestBlocking", "<all_urls>", "tabs" ],
+  "background": {
+    "scripts": ["request.js"]
+  }
+}
