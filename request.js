@@ -6,8 +6,8 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
         /^https?:\/\/doc\.qt\.io\/archives\/qt-[0-9\.]+(.*)$/g,
         /^https?:\/\/developer\.qt\.nokia\.com\/doc\/qt-[0-9\.]+(.*)$/g,
         /^https?:\/\/qt\.nokia\.com\/doc(.*)$/g,
-        /^https?:\/\/doc\.qt\.nokia\.com\/(?:latest|stable|[0-9\.]+)(.*)$/g,
-        /^https?:\/\/doc\.trolltech\.com\/[0-9\.]+(.*)$/g
+        /^https?:\/\/doc\.qt\.nokia\.com\/(?:main\-snapshot|latest|stable|[0-9\.]+)(.*)$/g,
+        /^https?:\/\/doc\.trolltech\.com\/(?:main\-snapshot|latest|stable|[0-9\.]+)(.*)$/g
     ]) {
         let match = expression.exec(url);
         if(match !== null) {
